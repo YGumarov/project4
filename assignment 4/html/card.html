@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="../css/card.css">
+  <link rel="icon" href="../image/icons8-питон-96.png">
+</head>
+<body>
+<div class="wrapper">
+  <div class="payment">
+    <div class="payment-logo">
+      <p>p</p>
+    </div>
+    
+    
+    <h2>Payment Gateway</h2>
+    <div class="form">
+      <div class="card space icon-relative card-holder">
+        <label class="label">Card holder:</label>
+        <input type="text" required class="input" placeholder="Name" id="name">
+        <i class="fas fa-user"></i>
+        <small>Error message</small>
+      </div>
+      
+      <div class="card space icon-relative card-number"> 
+        <label class="label">Card number:</label>
+        <input type="text" required class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number" id="Number" maxlength="16">
+        <i class="far fa-credit-card"></i>
+        <small>Error message</small>
+      </div>
+      
+      <div class="card-grp space">
+        <div class="card-item icon-relative expiry-date"> 
+          <label class="label">Expiry date:</label>
+          <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00" id="date" maxlength="4" oninput="checkExpiryDate(this)">
+          <i class="far fa-calendar-alt"></i>
+          <small>Error message</small>
+        </div>
+      
+        <div class="card-item icon-relative cvc">
+          <label class="label">CVC:</label>
+          <input type="text" class="input" data-mask="000" placeholder="000" id="cvc">
+          <i class="fas fa-lock"></i>
+          <small>Error message</small>
+        </div>
+      </div>
+
+      <button class="btn" id="payButton">Pay</button>
+    </div>
+
+  </div>
+</div>
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script> -->
+  <script src="../js/card.js"></script>
+</body>
+</html>

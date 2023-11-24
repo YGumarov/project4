@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/f2814acbf9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="addUserForm" class="mt-5">
+            <h2 class="mb-3">Add User</h2>
+            <div class="mb-3">
+                <label for="adminUsername" class="form-label">Username:</label>
+                <input type="text" class="form-control" id="adminUsername" required>
+            </div>
+            <div class="mb-3">
+                <label for="adminEmail" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="adminEmail" required>
+            </div>
+            <div class="mb-3">
+                <label for="adminPassword" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="adminPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add User</button>
+        </form>
+
+        <div class="registered-users-container mt-4">
+            <h2>Registered Users</h2>
+            <ul id="registeredUsersList" class="list-group">
+            </ul>
+        </div>
+
+        <button id="logoutBtn" class="btn btn-primary mt-3">Log Out</button>
+    </div>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

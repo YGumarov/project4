@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Python course</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <link rel="icon" href="../image/icons8-питон-96.png">
+
+        <style>
+            body {
+                overflow-x: hidden;
+            }
+            .img-fluid {
+                max-width: 100%;
+                height: auto;
+            }
+            .no-wrap {
+            white-space: nowrap;    
+            }
+        </style>
+</head>
+<body>
+
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="../image/python-logo-inkscape.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">HOME</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+            
+    <section id="le">
+        <h3 class="heading">LEARN</h3>
+
+        <div class="container-learn">
+            <div class="main-video">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/34Rp6KVGIEM?si=t4EWoTiqspkUfjqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="no-wrap">01. Introduction</h3>
+                </div>
+            </div>
+
+            <div class="vidoe-list">
+                <div class="vid active">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/34Rp6KVGIEM?si=t4EWoTiqspkUfjqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">01. Introduction</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/CfqX2_xY8VQ?si=nC1CxLrugH0_4I1X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">02. Installing the development environment</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/ML5tP8m6SHw?si=logwBsufp3gYE9hM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">03. Basic operations in Python</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/DZvNZ9l9NT4?si=VjmXX7arCfvR54Rx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">04. Variables and data types</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/SUDNfS_0X-Q?si=M1IDwNcCQ5puisX7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">05. Conditional operators</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/vMD6-jzgDvI?si=iDSEmpzzivVMVhrr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">06. For, while</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/-X2ubBdP2Ak?si=sUmmB-zM8NGVbkvz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">07. Lists (list). Functions and their methods</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/pqaBWcsBGyA?si=Fm2wGgLdqsVwef_t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">08. String functions. Indexes and slices</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let listVideo = document.querySelectorAll('.vidoe-list .vid');
+        let mainVideo = document.querySelector('.main-video video');
+        let title = document.querySelector('.main-video .title');
+
+        listVideo.forEach(video =>{
+            video.onclick = () =>{
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text; 
+                }
+            }
+        })
+    </script>
+
+    <section id="learn">
+        <h3 class="heading">OOP IN PYTHON</h3>
+        <div class="container-learn">
+            <div class="main-video">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/P4CNNo8jWj4?si=Hden1GGSU9Foqaw3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                     <h3 class="no-wrap">01. Classes and objects</h3>
+                </div>
+            </div>
+            <div class="vidoe-list">
+                <div class="vid active">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/P4CNNo8jWj4?si=Hden1GGSU9Foqaw3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">01. Classes and objects</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/Lw8TeLS4_IA?si=H-R3e4ZTEmoeomxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">02. Methods of classes. The self parameter</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/-J3Ou8-8vVk?si=0ctNGlcWwBVG2cmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">03. Initializer _init_ and finalizer _del_</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/-xoT6rntpK0?si=iuKId2EdjMvFNRBn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">04. The magic method _new_. Example of the Singleton pattern</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/78PTvj2wYH8?si=x829Eqz2N-RRY1hZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">05. Class methods (class method) and static methods (staticmethod)</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/RipfqbH0eqY?si=XhUR7djhoYONVj1G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">06. Public,private,protected,setter,getter</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/CAx-NLFc-Z4?si=D67ZiKk5YU7uHohK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">07. Magic methods</h3>
+                </div>
+                <div class="vid">
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/WNj55JzXnvc?si=oR2jetTAFTqVgQCF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="title">08. Patterns Monost200</h3>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="slider">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+              <img src="../image/motiv1.jpeg" alt="img" draggable="false">
+              <img src="../image/motiv3.jpeg" alt="img" draggable="false">
+              <img src="../image/motiv4.png" alt="img" draggable="false">
+              <img src="../image/motiv5.jpg" alt="img" draggable="false">
+              <img src="../image/motiv2.jpg" alt="img" draggable="false">
+              <img src="../image/motiv6.jpeg" alt="img" draggable="false">
+              
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
+        </section>
+
+    <!-----------------FOOTER-------------------->
+    <section id="footer">
+        <img src="../image/wave2.png" class="../image/footer-img">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-box">
+                    <img src="../image/WhatsApp Image 2023-10-01 at 19.19.20 (3).jpeg">
+                    <p>A website with huge opportunities for learning Python programming language.</p>
+                </div>
+
+                <div class="col-md-4 footer-box">
+                    <p><b>CONTACT US</b></p>
+                    <p>Kazakhstan, Astana</p>
+                    <p>+ 777 666 4455</p>
+                    <p>112233@astanait.edu.kz</p>
+                </div>
+
+                <div class="col-md-4 footer-box">
+                    <p><b>SUBSCRIBE TO OUR NEWS</b></p>
+                    <input type="email" class="form-control" placeholder="Your Email">
+                    <button type="button" class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Website for Assignment2</p>
+        </div>
+    </section>
+    <script src="../js/slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+/* Стили для контейнеров с курсами */
+.course-container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.course-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.register-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+/* Стили для контейнеров с курсами */
+.course-container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+.course-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.register-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
